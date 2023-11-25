@@ -28,6 +28,7 @@ const config: Config = {
         DEFAULT: "#1D1D1D",
       },
     },
+
     fontSize: {
       "8xl": /* Display - 120/120 */ [
         "120px",
@@ -141,6 +142,11 @@ const config: Config = {
           fontWeight: "400",
         },
       ],
+    },
+
+    borderRadius: {
+      DEFAULT: "10px",
+      full: "9999px",
     },
 
     extend: {},
