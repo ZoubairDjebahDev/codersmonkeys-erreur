@@ -1,10 +1,12 @@
+import Seo from "@/ui/components/seo/seo";
+
 const Home = () => {
   return (
-    <div>
+    <>
+      <Seo />
       <h1>Coders Monkeys</h1>
-    </div>
-
-  )
-}
+    </>
+  );
+};
 
 export default Home;
