@@ -1,5 +1,7 @@
 import Seo from "@/ui/components/seo/seo";
+import Button from "@/ui/design-system/button/button";
 import Typography from "@/ui/design-system/typography/typography";
+import { RiYoutubeFill, RiUser3Line } from "react-icons/ri";
 
 const Home = () => {
   return (
@@ -9,7 +11,7 @@ const Home = () => {
         Typography
       </Typography>
       <hr className="border-secondary border-2 mb-32" />
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-12 mb-12">
         <div className="flex flex-col gap-4">
           <Typography variant="caption4">Display</Typography>
           <Typography variant="display">Nothing is impossible</Typography>
@@ -115,6 +117,36 @@ const Home = () => {
             </Typography>
           </div>
         </div>
+      </div>
+
+      <Button variant="accent" size="small" isDisabled>
+        Connexion
+      </Button>
+      <Button variant="icon" size="small" icon={{ icon: RiYoutubeFill }} />
+      <Button
+        variant="icon"
+        size="small"
+        icon={{ icon: RiYoutubeFill }}
+        iconTheme="secondary"
+      />
+      <Button
+        variant="icon"
+        size="small"
+        icon={{ icon: RiYoutubeFill }}
+        iconTheme="gray"
+      />
+      <div className="flex items-center gap-4 p-10">
+        <Button size="small" icon={{ icon: RiUser3Line }}>
+          Connexion
+        </Button>
+        <Button
+          size="small"
+          icon={{ icon: RiUser3Line }}
+          iconPosition="left"
+          variant="outline"
+        >
+          Connexion
+        </Button>
       </div>
     </div>
   );
