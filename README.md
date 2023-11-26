@@ -1,10 +1,17 @@
-# CodersMonkeys
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Welcome to CodersMonkeys - A Community of Passionate Developers 🚀
+## Getting Started
 
-![Alt text](favicon.jpg)
+First, run the development server:
 
-## About Us
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-CodersMonkeys is not just a community; it's a family of developers who are passionate about coding, learning, and collaborating. We believe in the power of community-driven development and the positive impact it can have on individuals and the tech industry as a whole.
-
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

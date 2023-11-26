@@ -1,10 +1,9 @@
 import Seo from "@/ui/components/seo/seo";
-import { Button } from "@/ui/design-system/button/button";
-import Spinner from "@/ui/design-system/spinner/spinner";
 import Typography from "@/ui/design-system/typography/typography";
-import { RiBankCardFill, RiUser3Line } from "react-icons/ri";
 
-const Home = () => {
+const inter = Inter({ subsets: ['latin'] })
+
+export default function Home() {
   return (
     <div className="p-6">
       <Seo />
@@ -12,7 +11,7 @@ const Home = () => {
         Typography
       </Typography>
       <hr className="border-secondary border-2 mb-32" />
-      <div className="flex flex-col gap-12 mb-32">
+      <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-4">
           <Typography variant="caption4">Display</Typography>
           <Typography variant="display">Nothing is impossible</Typography>
@@ -116,125 +115,6 @@ const Home = () => {
             <Typography variant="caption4" weight="medium">
               Medium
             </Typography>
-          </div>
-        </div>
-      </div>
-
-      <Typography className="mt-12 -mb-8" variant="h1" theme="primary">
-        Colors
-      </Typography>
-      <hr className="border-secondary border-2 mb-32" />
-      <div className="grid grid-cols-3 mb-32">
-        <div className="flex">
-          <div className="w-14 h-10 bg-primary-200 rounded-l"></div>
-          <div className="w-14 h-10 bg-primary-300"></div>
-          <div className="w-14 h-10 bg-primary-400"></div>
-          <div className="w-14 h-10 bg-primary flex justify-center items-center">
-            <div className="w-2 h-2 bg-white rounded-full"></div>
-          </div>
-          <div className="w-14 h-10 bg-primary-600 rounded-r"></div>
-        </div>
-        <div className="flex">
-          <div className="w-14 h-10 bg-secondary-200 rounded-l"></div>
-          <div className="w-14 h-10 bg-secondary-300"></div>
-          <div className="w-14 h-10 bg-secondary-400"></div>
-          <div className="w-14 h-10 bg-secondary flex justify-center items-center">
-            <div className="w-2 h-2 bg-white rounded-full"></div>
-          </div>
-          <div className="w-14 h-10 bg-secondary-600 rounded-r"></div>
-        </div>
-        <div className="flex">
-          <div className="w-14 h-10 bg-gray-400 rounded-l"></div>
-          <div className="w-14 h-10 bg-gray-500"></div>
-          <div className="w-14 h-10 bg-gray-600"></div>
-          <div className="w-14 h-10 bg-gray-700"></div>
-          <div className="w-14 h-10 bg-gray-800"></div>
-          <div className="w-14 h-10 bg-gray rounded-r  flex justify-center items-center">
-            <div className="w-2 h-2 bg-white rounded-full"></div>
-          </div>
-        </div>
-      </div>
-
-      <Typography className="mt-12 -mb-8" variant="h1" theme="primary">
-        Button
-      </Typography>
-      <hr className="border-secondary border-2 mb-32" />
-      <div className="flex flex-col gap-12 mb-32">
-        <div className="flex flex-col gap-4">
-          <Typography variant="caption4">Small / 40px</Typography>
-          <div className="flex gap-4">
-            <Button size="small">Accent</Button>
-            <Button size="small" variant="secondary">
-              Secondary
-            </Button>
-            <Button size="small" variant="outline">
-              Outline
-            </Button>
-            <Button size="small" variant="disabled">
-              Disabled
-            </Button>
-            <Button
-              size="small"
-              variant="icon"
-              icon={{ icon: RiBankCardFill }}
-            ></Button>
-            <Button variant="icon" size="small" isLoading />
-          </div>
-        </div>
-        <div className="flex flex-col gap-4">
-          <Typography variant="caption4">Medium / 50px</Typography>
-          <div className="flex gap-4">
-            <Button>Accent</Button>
-            <Button variant="secondary">Secondary</Button>
-            <Button variant="outline">Outline</Button>
-            <Button variant="disabled">Disabled</Button>
-            <Button variant="icon" icon={{ icon: RiBankCardFill }}></Button>
-            <Button variant="icon" isLoading />
-          </div>
-        </div>
-        <div className="flex flex-col gap-4">
-          <Typography variant="caption4">Large / 60px</Typography>
-          <div className="flex gap-4">
-            <Button size="large">Accent</Button>
-            <Button size="large" variant="secondary">
-              Secondary
-            </Button>
-            <Button size="large" variant="outline">
-              Outline
-            </Button>
-            <Button size="large" variant="disabled">
-              Disabled
-            </Button>
-            <Button
-              size="large"
-              variant="icon"
-              icon={{ icon: RiBankCardFill }}
-            ></Button>
-            <Button variant="icon" size="large" isLoading />
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-4">
-          <Typography variant="caption4">Icon left/right</Typography>
-          <div className="flex gap-4">
-            <Button
-              size="small"
-              icon={{ icon: RiUser3Line }}
-              iconPosition="left"
-            >
-              Left Icon
-            </Button>
-            <Button size="small" icon={{ icon: RiUser3Line }}>
-              Right Icon
-            </Button>
-          </div>
-        </div>
-        <div className="flex flex-col gap-4">
-          <Typography variant="caption4">Spinner</Typography>
-          <div className="flex items-center gap-4">
-            <Spinner size="small" />
-            <Spinner />
-            <Spinner size="large" />
           </div>
         </div>
       </div>
